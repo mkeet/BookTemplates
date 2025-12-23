@@ -1,3 +1,7 @@
+# Classic Dissertation style and variants
+
+A fairly typical dissertation template, adapted for a a multilingual setting and additional customisation features.
+
 ## About the original template
 
 The original template was created by the ILLC in Amsterdam by Maarten de Rijke, which made its way to FUB where I adapted it for the dissertations. 
