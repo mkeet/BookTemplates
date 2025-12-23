@@ -28,5 +28,5 @@ Quick previews of Snazzy textbook, Modern basic book, and classic dissertation w
 
 ## License
 
-The templates are all **CC-BY-NC-SA 3.0** 
+The templates are all **CC-BY-NC-SA 3.0**. This is intended to mean that you can't make money from selling these  templates and if you revise them, please do share that alike. You're free to use the templates in whatever way you see fit for your book or dissertation. This licence does not apply to the product you create using the template that you can copyright/copyleft as you like, and that I wish you all the best with in making money from it if you so prefer.
 
