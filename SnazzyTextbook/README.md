@@ -35,7 +35,7 @@ Modified:
 
 Look-and-feel screenshot: 
 
-![Snazzy Textbook template look-and-feel](/example/pageImpression.png)
+![Snazzy Textbook template look-and-feel](example/pageImpression.png)
 
 The example/example.pdf is the typesetted main.tex.
 

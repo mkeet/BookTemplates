@@ -32,7 +32,7 @@ Removed:
 
 Look-and-feel screenshot: 
 
-![Modern Basic book template look-and-feel](/example/pageImpressionModernSimple.png)
+![Modern Basic book template look-and-feel](example/pageImpressionModernSimple.png)
 
 The example/example.pdf is the typesetted main.tex.
 
