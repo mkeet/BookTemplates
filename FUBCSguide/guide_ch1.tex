@@ -1,0 +1,163 @@
+\chapter{Getting started}
+
+This file describes the FUB-CS Dissertation Style package for
+typesetting dissertations in \LaTeX\ according to FUB-CS standards.
+It describes which files are needed, and how they should be adopted
+for your dissertation.
+It also serves as an example of using these files, and as a template
+for your own dissertation.
+
+The FUB-CS Dissertation Style file will change the
+layout of your dissertation to the required FUB-CS Dissertation Style.
+It defines a standard layout for the cover and spine of your dissertation,
+and includes a list of previous publications in the FUB-CS Dissertation series.
+ Furthermore, it redefines the layout of \verb|\chapter|, page heads,
+and theorem-like environments,
+and provides predefined theorem-like environments and
+commands for special sections such as \verb|\acknowledgements|.
+
+If you are already familiar with the standard {\tt book.cls} provided with
+\LaTeX 2$\epsilon$, then the FUB-CS Dissertation Style file should not give you
+any difficulties: you may use all {\tt book} style commands to prepare 
+your dissertation.
+For a description of the commands available in the \LaTeX 2$\epsilon$\ 
+{\tt book} style we refer you to the {\em \LaTeX{} User's Guide \& Reference
+Manual\/} by Leslie Lamport (1986, 1994), Addison-Wesley Publishing
+Company, Reading, Mass.
+
+For the sake of compatibility, this package contains an old version of the
+FUB-CS Dissertation Style, for use with \LaTeX 2.09. However, this version
+is no longer supported, and we kindly request you to use the
+\LaTeX 2$\epsilon$ version if at all possible.
+
+\section{How to proceed}
+The complete FUB-CS Dissertation Style package contains the following files:
+\begin{description} 
+\item[{\tt fubcsdiss.cls}:] the FUB-CS Dissertation Style for
+use with \LaTeX 2$\epsilon$
+\item[{\tt fubcs\_diss.sty}:] the FUB-CS Dissertation Style for
+use with \LaTeX 2.09
+\item[{\tt id10.sty}, {\tt id11.sty}, {\tt id12.sty}, {\tt epsf.sty}:] 
+  auxiliary files for the FUB-CS Dissertation Style style,
+  for use with \LaTeX 2.09
+\item[{\tt fubcsdissertations.tex}:] file containing data on previous
+  FUB-CS Dissertations
+\item[{\tt fubcslogo.eps}:] this is the FUB-CS logo;
+  input by {\tt guide\_front.tex}
+\item[{\tt fubcs\_no\_text\_logo.eps}:] the FUB-CS logo without text;
+  input by {\tt guide\_spine.tex}
+\item[{\tt guide.tex}:] the main latex file for this document
+\item[{\tt guide\_front.tex}:] file describing the official 
+  FUB-CS-Dissertation front matter
+\item[{\tt guide\_XXX.tex}:] file containing the text of section XXX of this 
+document
+\item[{\tt guide\_spine.tex}:] file for preparing the text 
+  for the spine of your dissertation
+\end{description}
+You should make sure that \LaTeX\ is able to find the files
+{\tt fubcsdissertations.tex}, {\tt fubcsdiss.cls}, {\tt fubcslogo.eps} and
+{\tt fubcs\_no\_text\_logo.eps} when you 
+typeset your document with the FUB-CS Dissertation Style; one way
+to achieve this is to put all files in the FUB-CS Dissertation Style
+package in the directory (or folder) where your dissertation files
+reside.
+
+Note that the {\tt fubcsdissertations.tex}
+file in the archive is automatically updated for any new dissertations:
+please download the most recent version 
+before sending your dissertation to the printers.
+
+\section{Invoking the FUB-CS Dissertation Style}
+The FUB-CS Dissertation Style is invoked by replacing ``book'' by ``fubcsdiss''
+in the first line of your document. You should also \verb|\include| 
+a {\em personalized\/} version of the file {\tt guide\_front.tex} 
+after the \verb|\begin{document}| declaration. 
+You also need to \verb|\include| the file
+\verb|fubcsdissertations.tex| after the last page of your dissertation:
+
+\begin{verbatim}
+\documentclass{fubcsdiss}
+
+\begin{document}
+\pagestyle{plain}
+\pagenumbering{roman}
+
+%%  \include the `front matter'
+
+\include{guide_front}
+\include{guide_dedication}
+\tableofcontents
+\include{guide_acknowledgements}
+\include{guide_abstract}
+
+%%  now we can start with the real thing
+
+\cleardoublepage
+\pagestyle{headings}
+\pagenumbering{arabic}
+  
+    <your dissertation>
+
+%%  \include the `end matter'
+
+\include{guide_bib}
+\include{guide_index}
+\include{guide_symbols}
+\include{guide_riassunto}
+\include{guide_zusammenfassung}
+\include{guide_curriculum}
+
+%%  finally, \include the list of previous FUB-CS dissertations
+
+\include{fubcsdissertations}
+
+\end{document}
+\end{verbatim}
+%
+%
+If your file is already coded with \LaTeX{} you can easily
+adapt it a posteriori to the FUB-CS Dissertation Style.
+
+If your document is coded with the FUB-CS Dissertation Style,
+you may not be able to typeset it using the standard \LaTeX\ book style
+without doing some minor recoding,
+as the FUB-CS Dissertation Style file defines some comands 
+that are not provided by the standard \LaTeX\ book style.
+
+Please refrain from using any \LaTeX{} or \TeX{} commands
+that affect the layout or formatting of your document
+(i.e.\ commands like \verb|\textheight|, \verb|\hoffset| etc.).
+The FUB-CS Dissertation Style has been carefully designed 
+to produce the rightlayout from your \LaTeX\ input.
+There may nevertheless be exceptional occasions on which to use some of them.
+If there is anything specific you would like to do 
+and for which neither \LaTeX{} nor the FUB-CS Dissertation Style file 
+provides a command,
+{\em please contact us\/} (email: cs-secretariat@unibz.it).
+
+\section{Personalizing {\tt guide\_front.tex}}
+The file {\tt guide\_front.tex} contains all information needed 
+to produce the front matter of your dissertation according to FUB-CS standards.
+You need to personalize {\tt guide\_front.tex} by inserting your data
+at appropriate spots. Additionally, those that print on single-sided
+printers will want to eliminate the empty page printed after the cover page.
+All items that need to be personalized in 
+{\tt guide\_front.tex} can be found by searching for the string 
+``\%{}PERSONALIZE''.
+Note that items such as the name of the Rector Magnificus {\em may} be 
+up-to-date, but it is prudent to assume not and research the name of
+the current Rector Magnificus. All such items are also marked with
+the string ``\%{}PERSONALIZE''.
+The files {\tt guide\_dedication} and {\tt guide\_acknowledgements} 
+contain the optional dedication and acknowledgements, and are \verb|\include|d
+from the main file.
+You can personalize the text in these files, or simply change the name
+of the \verb|\include|d files in the main file.
+
+\section{Personalizing {\tt guide\_spine.tex}}
+The file {\tt guide\_spine.tex} contains all information needed
+to produce the spine of your dissertation according to FUB-CS standards.
+You need to personalize the file {\tt guide\_spine.tex} by inserting 
+your data at appropriate spots. All items that need to be personalized in
+{\tt guide\_spine.tex} can be found by searching for the string
+``\%{}PERSONALIZE''.

@@ -1,0 +1,123 @@
+%% This is the standard `front matter' to be used with the illcdiss.cls
+%% Latex2e document class or the illc_diss.sty Latex2.09 style file
+%%
+%%
+%% MAKE SURE THAT THE FILE HAS BEEN PERSONALIZED BEFORE YOU
+%% PRINT AND SHIP THE FINAL VERSION.  YOU CAN FIND ITEMS THAT NEED
+%% TO BE PERSONALIZED BY SEARCHING FOR THE STRING ``%PERSONALIZE''
+%%
+%%
+%%first of all the cover.
+{\pagestyle{empty}
+\newcommand{\printtitle}{%
+{\Huge\bf The FUB-CS Dissertation\\[0.8cm] Style}}    %PERSONALIZE
+
+\begin{titlepage}
+\par\vskip 2cm
+\begin{center}
+\printtitle
+\vfill
+{\LARGE\bf John B. Goode}                           %PERSONALIZE
+\vskip 2cm
+\end{center}
+\end{titlepage}
+%
+% Skip a page to start on a right page again.
+% If you're printing single-sided, simply delete    %PERSONALIZE
+% the following line.
+%
+
+\mbox{}\newpage
+\setcounter{page}{1}
+
+%%the very first page: the `franse pagina'
+\par\vskip 2cm
+\begin{center}
+\printtitle
+\end{center}
+
+%%the second page: the `FUB-CS pagina'
+\clearpage
+\par\vskip 2cm
+\begin{center}
+\par\vspace {1cm}
+\fubcslogo{10cm}
+\par\vspace {2cm}
+\textbf{FUB-CS Dissertation Series DS-2009x-NN}   %PERSONALIZE                
+\par\vspace {7cm}
+\noindent%
+
+Per ulteriori informazioni sulle pubblicazioni della LUB, si prega di contattare \\
+\emph{F\"{u}r weitere Informationen \"{u}ber FUB Publikationen, bitte wenden Sie sich an}\\
+For further information about FUB-CS publications, please contact\\
+\begin{table}[!h]
+	\centering
+		\begin{tabular}{p{5cm}lll}
+Facolt\`{a} di Scienze e Tecnologie Informatiche & Fakult\"{a}t f\"{u}r Informatik & Faculty of Computer Science \\
+Libera Universit\`{a} di Bolzano & Freie Universit\"{a}t Bozen &  Free University of Bozen-Bolzano \\
+Piazza Domenicani 3 & 3 Domenikanerplatz & Piazza Domenicani 3 \\
+39100 Bolzano & 39100 Bozen & 39100 Bozen-Bolzano \\
+Italia & Italien & Italy\\
+		\end{tabular}
+	\label{tab:address}
+\end{table}
+\vspace{-10pt}
+tel: +39 0471 016 000\\
+fax: +39 0471 016 009\\
+e-mail: {\tt cs-secretariat@unibz.it}\\
+homepage: {\tt http://www.unibz.it/inf}
+\end{center}
+
+
+%%the third page: the `titelblad'
+\clearpage
+\par\vskip 2cm
+\begin{center}
+\printtitle
+\par\vspace {6cm}
+{\large \sc Tesi per il Dottorato di Ricerca in Informatica}
+\par\vspace {1cm}
+{\large \sc Doktorarbeit in Informatik}
+\par\vspace {1cm}
+{\large \sc PhD Thesis in Computer Science}
+\par\vspace {2cm}
+{\large DS-200x-NN}			%PERSONALIZE 
+\par \vspace {5cm} 
+{\Large John Benedikt Goode}  	%PERSONALIZE 
+\par\vspace {1cm} 
+\end{center}
+
+%%the fourth page: promotores, ISBN etc.
+\clearpage
+\noindent%
+Relatore - \textit{Doktorvater} - Faculty Advisor: Prof. Professor\\ 		%PERSONALIZE             
+Correlatore - \textit{Zweitbetreuer} - Faculty Co-Advisor: Dr. Dokter\\ 	%PERSONALIZE 
+
+\vfill
+
+% If you want to add CIP data (a summary of all the data used in
+% library catalogs in a standard format), uncomment the following
+% three lines and add the CIP data in between
+%
+
+\noindent%
+\textsl{Keywords}: Amazing Computer Science for the 21st century \\[2ex]          % PERSONALIZE
+\textsl{ACM categories}: Knowledge Representation Formalisms and Methods (I.2.4), Knowledge Engineering Methodologies (M.1), Knowledge Modeling (M.4)                            % PERSONALIZE
+\\[6ex]                                            %PERSONALIZE
+
+%Copyright and accreditation stuff, plus ISBN
+%
+\noindent%
+Copyright \copyright\ 200x by John B. Goode\\[2ex] 		%PERSONALIZE 
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 License.\\ %PERSONALIZE 
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 543 Howard Street, 5th floor, San Francisco, California, 94105, USA. \\[2ex]  %PERSONALIZE 
+% Cover design, if your cover was designed by someone else	
+Cover design by Mickey Mouse \\[1ex]           %PERSONALIZE 
+%Don't forget your printing shop
+Printed and bound by DigiPrint.\\[2ex]           %PERSONALIZE
+ISBN: 90--XXXX--XXX--X                              %PERSONALIZE
+
+\clearpage
+} % Back to \pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%END of FRONT MATTER%%%%%%%%%%%%%%%%%%%%%%%%%%%

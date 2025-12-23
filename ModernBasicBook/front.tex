@@ -1,0 +1,96 @@
+%% Oirignal template from IILC, adapted to FUBCS, and from there to mybook
+%% This is the standard `front matter' to be used with the illcdiss.cls
+%% Latex2e document class or the illc_diss.sty Latex2.09 style file
+%%
+%%
+%% MAKE SURE THAT THE FILE HAS BEEN PERSONALISED BEFORE YOU
+%% PRINT AND SHIP THE FINAL VERSION.  YOU CAN FIND ITEMS THAT NEED
+%% TO BE PERSONALISED BY SEARCHING FOR THE STRING ``%PERSONALISE''
+%%
+%%
+%%first of all the cover.
+{\pagestyle{empty}
+\newcommand{\printtitle}{%
+{\Huge\bf Your Title Goes Here}}    %PERSONALISE
+\begin{titlepage}
+\mbox{ }
+\vspace{1.5cm}
+\begin{center}
+\printtitle
+\par\vskip 1.5cm
+%optionally: add a figure on your front cover
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.9\textwidth]{franschhoek.jpeg} %PERSONALISE
+\end{figure}
+
+\vfill
+{\LARGE\bf Your Name}                           %PERSONALISE
+\vskip 2cm
+{\em Translated and edited by Someone Else} %PERSONALISE
+\end{center}
+\par\vskip 2cm
+\end{titlepage}
+%
+% Skip a page to start on a right page again.
+% If you're printing single-sided, simply delete    %PERSONALISE
+% the following line.
+%
+
+\mbox{}\newpage
+\setcounter{page}{1}
+
+%%%the very first page: the `franse pagina'
+%\par\vskip 2cm
+%\begin{center}
+%\printtitle
+%\end{center}
+
+%%the third page: the `titelblad'
+\clearpage
+\par\vskip 2cm
+\begin{center}
+\printtitle
+\par\vskip 3cm
+{\LARGE\bf Your Name}      %PERSONALISE
+\vfill        
+{\em Translated and edited by Someone Else} %PERSONALISE
+\vskip 2cm
+\end{center}
+
+%%the fourth page: promotores, ISBN etc.
+\clearpage
+\noindent%
+\vspace{4cm}
+\vfill
+
+% If you want to add CIP data (a summary of all the data used in
+% library catalogs in a standard format), uncomment the following
+% three lines and add the CIP data in between
+%
+
+\noindent%
+\textsl{Keywords}: Templates, Book, Booklet \\[2ex]          % PERSONALISE
+%\textsl{ACM categories}: % PERSONALISE
+\\[6ex]                                            %PERSONALISE
+
+%Copyright and accreditation stuff, plus ISBN
+%
+\noindent%
+English translation Copyright \copyright\ 2025 by Someone Else\\[1ex] 	%PERSONALISE 
+
+\noindent%
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 License.\\ %PERSONALISE 
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 543 Howard Street, 5th floor, San Francisco, California, 94105, USA. \\[3ex]  %PERSONALISE 
+% Cover design, if your cover was designed by someone else	
+\noindent This book is typeset in \LaTeX\\[1ex]
+Cover design by Maria Keet\\ %PERSONALISE 
+Cover photo: View from a wine farm in Franschhoek, South Africa\\[2ex]  %PERSONALISE 
+%Don't forget your printing shop
+Printed and bound by PrinterPrints\\[1ex]           %PERSONALISE
+ISBN: 978-xx-yyyyyy-z-w                             %PERSONALISE
+
+\clearpage
+} % Back to \pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%END of FRONT MATTER%%%%%%%%%%%%%%%%%%%%%%%%%%%

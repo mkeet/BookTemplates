@@ -1,0 +1,78 @@
+\chapter{Technical Specifications}
+This chapter contains the exact specifications of the FUB-CS Dissertation Style.
+
+\paragraph*{Page dimensions}
+By default, the FUB-CS Dissertation Style uses the options
+\verb|twoside|, \verb|a4paper| and \verb|12pt|.
+The left and right margins are equal, as are the top and bottom margins.
+\\[\baselineskip]
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+Font Size &  Text   &  Text   & Height incl.& Left/Right & Top/Bottom \\
+          &  Width  &  Height &  Head/Foot  &   Margin   & Margin     \\ \hline
+ 10 pt    &  121 mm &  182 mm &  201 mm     &  44.5 mm   &  57.3 mm   \\
+ 11 pt    &  133 mm &  200 mm &  222 mm     &  38.4 mm   &  45.2 mm   \\
+ 12 pt    &  145 mm &  218 mm &  242 mm     &  32.4 mm   &  33.1 mm   \\
+12 pt (81\%)& 118 mm & 177 mm &  196 mm     &  25.7 mm   &  26.8 mm   \\ \hline
+\end{tabular}
+
+\paragraph*{The page head and foot}
+Left-hand pages have the page-number in the upper left corner,
+and the italized non-uppercase current chapter title in the upper right corner.
+Right-hand pages have the page-number in the upper right corner,
+and the italized non-uppercase current section title in the upper left corner.
+If the \verb|\cleardoublepage| command causes a left-hand page to be empty,
+that page will have neither page number nor page head.
+
+\paragraph*{The chapter head}
+By default, the FUB-CS Dissertation Style uses the option \verb|openright|.
+With this option, chapters always start on a right-hand page
+(using the \verb|\cleardoublepage| command).
+The first page of a chapter has the pagenumber in the page foot,
+and an empty page head.
+Each chapter starts with
+a blank space (18 pt high at a 12 pt fontsize),
+the left-aligned boldfaced \verb|Large|-sized chapternumber,
+a horizontal line,
+the right-aligned boldfaced \verb|LARGE|-sized chaptertitle,
+and another blank space (120 pt high at a 12 pt fontsize).
+
+As mentioned in Chapter 2, you can change this with the fancy chapter option.
+
+\paragraph*{Sectioning commands}
+The commands \verb|\thebibliography| and \verb|\theindex| now
+produce an entry in the table of contents.
+The new sectioning commands \verb|\thesymbols|, \verb|\acknowledgements|,
+\verb|\riassunto|, \verb|\zusammenfassung|, \verb|\abstract| and \verb|\curriculum| are defined.
+All sectioning commands now produce non-uppercased page heads.
+
+\paragraph*{Theorem-like environments}
+All theorem-like environments begin with the number in bold-faced type,
+`theorem' (or similar) in small caps,
+and the optional argument (if any) in a normal fonttype.
+The theorem-like environments
+\verb|\theorem|,
+\verb|\conjecture|,
+\verb|\lemma|
+\verb|\proposition| and
+\verb|\corollary|
+are predefined and have italicized text.
+The theorem-like environments
+\verb|\definition|,
+\verb|\remark|,
+\verb|\example|,
+\verb|\convention|,
+\verb|\fact| and
+\verb|\question|
+are predefined and have non-italicized text.
+All predefined theorem-like environments are numbered consecutively,
+within each section.
+
+\paragraph*{Miscellaneous}
+The \verb|fubcsdiss| class loads the \verb|graphicx| package,
+and defines the commands 
+\verb|\fubcslogo| and \verb|\fubcsnotextlogo|.
+On systems where the \verb|graphicx| package is not available, you
+can use the \verb|fubcsdiss-epsfig| class, which loads the
+\verb|epsfig| package instead. This package is not suitable for
+use in conjunction with \verb|pdflatex| however.
+

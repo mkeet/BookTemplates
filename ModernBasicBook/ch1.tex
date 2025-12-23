@@ -1,0 +1,43 @@
+\chapter{This is the first chapter}
+
+The sample tex file (called {\tt mainA4.tex}) contains plenty annotations, as does the class file. There are also options for an abstract and list of symbols, and of course figures and table can be added as usual. The chapter heading layout can be adjusted, images added to the back flap text etcetera.
+
+\section{A section heading}
+
+\lipsum[2-4]
+
+\section{Indexes}
+
+Here goes learning about citations\index{learn!citing}. \lipsum[1-2]
+
+And learning about indexes\index{learn!indexes}. \lipsum[1-3]
+
+\section{References}
+
+Use bibtex to manage it, via a bib file preferably, but else plain entries  will do the job just as well. \index{bibtex}
+Then there's the {\tt natbib} package for pretty entries that may or may not be numbered and where one can control in text when something should be in brackets and how. See its documentation for details.  
+
+\section{A section with an endnote and a citation}
+
+Consider our responsibility toward future generations\index{generation!future} \citep{Pontara95} as well as footnotes and endnotes\endnote{This is an endnote}. And another citation without the `p' as the default \cite{Gandhi48}. And one with the `t', like \citet{SJ99} did, that renders with just the year in brackets.
+
+\lipsum[1-2]
+
+\section{Itemised lists}
+
+The usual:
+%
+\begin{itemize}
+\item entry one
+\item entry two
+\end{itemize}
+%
+
+\noindent And compact:
+%
+\begin{compactitem}
+\item entry one
+\item entry two
+\end{compactitem}
+%
+

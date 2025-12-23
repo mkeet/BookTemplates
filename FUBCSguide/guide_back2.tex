@@ -1,0 +1,52 @@
+%% This is the standard `front matter' to be used with the illcdiss.cls
+%% Latex2e document class or the illc_diss.sty Latex2.09 style file
+%%
+%% Author: Marijke Keet
+%%
+%% Version: July, 2007
+%%
+%% MAKE SURE THAT THE FILE HAS BEEN PERSONALIZED BEFORE YOU
+%% PRINT AND SHIP THE FINAL VERSION.  YOU CAN FIND ITEMS THAT NEED
+%% TO BE PERSONALIZED BY SEARCHING FOR THE STRING ``%PERSONALIZE''
+%%
+%%
+{\pagestyle{empty}
+%\clearpage
+\par\vskip 2cm
+\begin{backsummary}
+By preference, your dissertation should contain the highlights on the back cover. You may specify
+the back cover summary:\\[2ex]
+\verb|  \begin{backsummary}|\\
+\verb|    <your 3-year's work in less than half a page>|\\
+\verb|  \end{backsummary}|
+\end{backsummary}
+\begin{center}
+\par\vspace {2cm}
+%\textbf{FUB-CS Dissertation Series DS-200X-NN}                 %PERSONALIZE
+\par\vspace {1cm}
+\noindent%
+\fublogo{9cm}
+\end{center}
+\vfill
+
+%Copyright and accreditation stuff, plus ISBN
+%
+\noindent%
+%\fubcslogo{5cm}\\
+% Copyright: put your name here
+Copyright \copyright\ 200X by John B.\ Goode\\[2ex] %PERSONALIZE
+% Cover design, if your cover was designed by someone else
+Cover design by Bert Jones.\\                       %PERSONALIZE
+%Maybe some additional info on the production of the dissertation.
+%Don't forget your printing shop
+Printed and bound by your printer.\\[2ex]           %PERSONALIZE
+%ISBN number: ask your faculty library how to obtain one
+ISBN: 90--XXXX--XXX--X                              %PERSONALIZE
+
+% Dedication, table of contents and acknowledgements
+% are handled in the main file
+
+%\clearpage
+} % Back to \pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%END of BACK MATTER%%%%%%%%%%%%%%%%%%%%%%%%%%%

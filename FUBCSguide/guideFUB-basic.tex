@@ -1,0 +1,132 @@
+%% This is an example using the fubcsdiss.cls.
+%%
+%% Author: Marco Vervoort, ILLC UvA
+%% Modified by: Marijke Keet, KRDB FUB
+%%
+%% Version: December, 2007.
+%%
+%%
+%%
+%%
+\documentclass{fubcsdiss}
+
+%If you use Latex2.09 instead of Latex2e, comment the \documentclass line
+%and uncomment one of the following lines (depending on whether you
+%also want to use MakeIndex)
+
+%\documentstyle[12pt,epsf]{illc_diss}
+%\documentstyle[12pt,makeidx,epsf]{illc_diss}
+
+%If you want to use MakeIndex, uncomment these lines
+%\usepackage{makeidx}     % only with Latex2e
+%\makeindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% put your list of packages here with \usepackage{}. several nifty ones for customization options are commented out below and annotated, merely as suggestion.
+
+%\usepackage{natbib} % for funky \cite options
+
+\usepackage{amsmath}
+\usepackage{mathenv}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{textcomp}
+ \usepackage{longtable} %table spanning pages
+\usepackage{multirow}
+% \usepackage{lscape} % for landscape pages
+\usepackage{pifont}
+\usepackage[font=small,labelfont=it,bf]{caption} %for customizable figure and table captions
+
+% \usepackage{fancyhdr}  % you can choose between 7 different types of heading, besides the default. for instance, try 
+%\usepackage[Lenny]{fncychap} 
+% or \usepackage[Bjarne]{fncychap} % or Sonny, or Conny
+%\usepackage[Sonny]{fncychap} 
+
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+\usepackage{listings}
+\usepackage{xspace}
+% \usepackage{palatino} %for different font type
+% \usepackage[T1]{fontenc}
+%\usepackage[scaled]{uarial}% for the modern-look fonttype:
+%\renewcommand*\familydefault{\sfdefault}
+
+%\usepackage{soul, color} % this with the next one gives convenient colouring options for drafts, e.g. with a \hl{xxx}, the marking becomes ugly green.
+
+%\sethlcolor{green} 
+%\setul{2pt}{0.5pt} % use this if you want to change spacing of the underling
+
+ \usepackage[neveradjust]{paralist} %this one is handy if you are short on space or want to have a listing with bulletes, starts etc. e.g. use \begin{compactenum} \item ... \end{comactenum}
+
+%\usepackage[top=3cm, bottom=2.8cm, left=2.7cm, right=2.7cm]{geometry} % to make nice page margins to squezze more or less text on a page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%and then my shortcuts
+
+% put your \newcommand etc here. For instance, the following formats are quite nice, but you also can take the default by commenting them:
+
+\newtheorem{lem}{\textsc{Lemma}}[chapter]
+\newtheorem{thm}{\textsc{Theorem}}[chapter]
+\newtheorem{prop}{\textsc{Proposition}}[chapter]
+\newtheorem{post}{Postulate}[chapter]
+\newtheorem{corr}{\textsc{Corollary}}[chapter]
+\newtheorem{defs}{\textsc{Definition}}[chapter]
+\newtheorem{cons}{\textsc{Constraint}}[chapter]
+\newtheorem{ex}{\textbf{Example}}[chapter]
+\newtheorem{qu}{\textbf{Question}}[chapter]
+
+%\makeindex
+
+%\typeout{FUB CS Dissertation Example File `guide.tex' <June 23, 2007>.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+ \pagestyle{plain}
+\pagenumbering{roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%  \include the `front matter'
+
+\include{guide_fronts}
+\include{guide_dedication}
+\tableofcontents 
+% \listoffigures %in case you have them
+% \listoftables %in case you have them
+% \listofalgorithms %in case you have them
+\include{guide_acknowledgments}
+\include{guide_abstract}
+
+%%  now we can start with the real thing
+
+\cleardoublepage
+\pagestyle{headings}
+\pagenumbering{arabic}
+
+\include{guide_ch1}
+\include{guide_ch2}
+\include{guide_ch3}
+%\include{guide_ch4}
+\appendix
+\include{guide_appA}
+
+%%  \include the `end matter'
+
+%\bibliographystyle{plain}
+\include{guide_bib2}
+\include{guide_index}
+\include{guide_symbols}
+%\include{guide_riassunto} %%%%%%%% optional
+%\include{guide_zusammenfassung} %%%%%%%% optional
+\include{guide_curriculum}
+
+%%  finally, \include the list of previous FUB-CS dissertations
+
+\cleardoublepage % if you are so inclined
+\include{fubcsdissertations} %PERSONALIZE that is: make sure you have the latest list.
+%\include{guide_back1} % for a thesis with a back-flap summary
+\include{guide_back} %or take this one for a fairly plain back cover
+ 
+\end{document}

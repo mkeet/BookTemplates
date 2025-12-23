@@ -1,0 +1,37 @@
+## About the original template
+
+The original template was created by the ILLC in Amsterdam by Maarten de Rijke, which made its way to FUB where I adapted it for the dissertations. 
+
+## Adaptations for FUBCS
+
+I took that FUBCS guide and gave it a modern look-and-feel a while ago. Some of the changes include the following aspects.
+
+Added:
+- multilingual is assumed and accommodated, with FUB being a quadrilingual university
+- adaptations to Computer Science at FUB (meanwhile outdated so if you're at FUB, update images and faculty name accordingly)
+- basic, standard, and modern variants
+- other enhancements for easy customisation, such as fancy header and more captioning options
+
+Modified:
+- more annotations in the tex on how and where to customise matters
+
+
+## Examples
+
+
+Look-and-feel screenshots of the three main options: 
+
+![Classic dissertation style template look-and-feel, among the three main options](/examples/pageImpressionGuideFUB.png)
+
+![Classic dissertation style template look-and-feel, among the three main options](/examples/pageImpressionGuideFUB-basic.png)
+
+![Classic dissertation style template look-and-feel, among the three main options](/examples/pageImpressionGuideFUB-modern.png)
+
+
+The examples/guideFUB.pdf are the respective typesetted guideFUB.tex that can be used as a template to start from, each with slight variations in layout. That guide also has plenty of explanations.
+
+For a complete document typesetted with actual content, you could take a trip to the library or search for theses of CS@FUB graduates. Mine is available online here: http://www.meteck.org/files/AFormalTheoryOfGranularity_CMK08.pdf.
+
+## License
+
+No copyleft license was specified, as the old files were from an era where hardly any bothered specifying it whilst assuming such templates were simply free to use and intended for use. This template is **CC-BY-NC-SA 3.0**. 

@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paper]{modernsimple} %12pt suffices for printing on A5 still
+
+\usepackage{natbib} % for funky \cite options
+
+% this package can safely be removed when you create your booklet
+\usepackage{lipsum}
+
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{pifont}
+\usepackage[font=small,labelfont=it,bf]{caption} %for customisable figure and table captions
+
+% \usepackage{fancyhdr}  % you can choose between 7 different types of heading, besides the default. for instance, try 
+%\usepackage[Lenny]{fncychap} 
+% or \usepackage[Bjarne]{fncychap} % or Sonny, or Conny
+\usepackage[Sonny]{fncychap} 
+
+\usepackage{listings}
+\usepackage{xspace}
+\usepackage[T1]{fontenc}
+% make sure it's installed, else it will default to times
+%\usepackage[scaled]{uarial} 
+%\renewcommand\familydefault{\sfdefault} 
+% Alternatively, use:
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+\linespread{1.2} %to make it easier on the eye rather than cramming as much text as possible on a page
+\usepackage{soul, color} % this with the next one gives convenient colouring options for drafts, e.g. with a \hl{xxx}, the marking becomes ugly green.
+\usepackage{url}
+    \usepackage{endnotes}
+%   \let\footnote=\endnote
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+ \usepackage[neveradjust]{paralist} %this one is handy if you are short on space or want to have a listing with bullets, stars etc. 
+ % use 
+ % \begin{compactenum} 
+ % \item ... 
+ % \end{comactenum}
+ % see package for options
+
+\usepackage[top=3.0cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry} % for tweaking page margins
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% and then my own shortcuts
+
+% put your \newcommand etc here. For instance, the following formats are quite nice, but you also can take the default by commenting them:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeindex
+
+
+\begin{document}
+
+\pagestyle{plain}
+\pagenumbering{roman}
+\setlength{\bibsep}{0.3mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%  \include the `front matter'
+
+\include{front}
+\include{dedication}
+
+\tableofcontents 
+
+%%%%%%%%  now we can start with the real content
+
+\cleardoublepage
+\pagestyle{headings}
+
+\include{foreword}
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+\include{ch1}
+
+\include{ch2}
+
+%%%%%%%%  \include the `end matter'
+
+
+\include{notes}
+\include{biosketch}
+\include{mybib}
+\include{myindex}
+
+% if you are so inclined
+\cleardoublepage 
+\pagestyle{empty}
+\mbox{ }
+
+\include{back} 
+ 
+\end{document}
