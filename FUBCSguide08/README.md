@@ -25,11 +25,11 @@ Modified:
 
 Look-and-feel screenshots of the three main options: 
 
-![Classic dissertation style template look-and-feel, among the three main options](/examples/pageImpressionGuideFUB.png)
+![Classic dissertation style template look-and-feel, among the three main options](examples/pageImpressionGuideFUB.png)
 
-![Classic dissertation style template look-and-feel, among the three main options](/examples/pageImpressionGuideFUB-basic.png)
+![Classic dissertation style template look-and-feel, among the three main options](examples/pageImpressionGuideFUB-basic.png)
 
-![Classic dissertation style template look-and-feel, among the three main options](/examples/pageImpressionGuideFUB-modern.png)
+![Classic dissertation style template look-and-feel, among the three main options](examples/pageImpressionGuideFUB-modern.png)
 
 The examples/guideFUB.pdf are the respective typesetted guideFUB.tex that can be used as a template to start from, each with slight variations in layout. That guide also has plenty of explanations.
 
