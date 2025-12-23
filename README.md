@@ -17,6 +17,8 @@ This repo currently contains three templates that are intended for writing disse
 
 Examples are provided in the respective subfolders named "example", both as pdf of the typesetted main file and a screenshot of a page for an initial impression. The respective readme files also have links to files where I've used the template to write stuff (my PhD dissertation, the ontology engineering textbook (2nd ed.), and a booklet I translated).
 
+Quick previews of Snazzy textbook, Modern basic book, and classic dissertation with options:
+
 ![Snazzy Textbook template look-and-feel](/SnazzyTextbook/example/pageImpression.png)
 
 ![Modern Basic book template look-and-feel](/ModernBasicBook/example/pageImpressionModernSimple.png)
